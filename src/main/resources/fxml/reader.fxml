@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="github.gtouming.library.controller.ReaderController"
+      styleClass="content-area" spacing="24">
+
+    <!-- 头部 -->
+    <VBox styleClass="content-header">
+        <Label text="读者管理" styleClass="content-title"/>
+        <Label text="管理系统中的读者信息" styleClass="content-subtitle"/>
+    </VBox>
+
+    <!-- 搜索和操作 -->
+    <HBox spacing="16" alignment="CENTER_LEFT">
+        <TextField fx:id="searchField" promptText="搜索读者账号或昵称" styleClass="search-field"/>
+        <Button fx:id="addReaderBtn" text="添加读者" styleClass="secondary-button"/>
+        <Button fx:id="updateReaderBtn" text="修改读者" styleClass="secondary-button"/>
+        <Button fx:id="deleteReaderBtn" text="删除选中" styleClass="secondary-button"/>
+    </HBox>
+
+    <!-- 读者列表 -->
+    <TabPane VBox.vgrow="ALWAYS">
+        <Tab text="读者列表" closable="false">
+        <TableView fx:id="readerTable">
+            <columns>
+                <TableColumn text="账号" fx:id="accountCol"/>
+                <TableColumn text="昵称" fx:id="nameCol"/>
+                <TableColumn text="性别" fx:id="genderCol"/>
+                <TableColumn text="地区" fx:id="regionCol"/>
+                <TableColumn text="当前借阅" fx:id="borrowCountCol"/>
+            </columns>
+        </TableView>
+        </Tab>
+    </TabPane>
+
+</VBox>

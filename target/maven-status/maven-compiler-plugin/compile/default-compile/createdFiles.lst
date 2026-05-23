@@ -1,0 +1,14 @@
+github\gtouming\library\controller\BorrowController.class
+github\gtouming\library\util\DatabaseUtil.class
+github\gtouming\library\controller\PersonalController.class
+github\gtouming\library\controller\ReaderController.class
+github\gtouming\library\service\BookServiceImpl.class
+github\gtouming\library\model\Book.class
+github\gtouming\library\App.class
+github\gtouming\library\service\BookService.class
+github\gtouming\library\model\User.class
+github\gtouming\library\controller\MainController.class
+github\gtouming\library\controller\BookManageController.class
+github\gtouming\library\controller\RegisterController.class
+github\gtouming\library\controller\LoginController.class
+github\gtouming\library\util\AlertUtil.class
